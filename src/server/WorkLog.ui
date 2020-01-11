@@ -1,0 +1,887 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WorkLog</class>
+ <widget class="QWidget" name="WorkLog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>958</width>
+    <height>510</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#WorkLog
+{
+border: 1px solid gray;
+border-radius:5px; 
+ 
+ 
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <property name="spacing">
+    <number>7</number>
+   </property>
+   <property name="leftMargin">
+    <number>10</number>
+   </property>
+   <property name="topMargin">
+    <number>10</number>
+   </property>
+   <property name="rightMargin">
+    <number>10</number>
+   </property>
+   <property name="bottomMargin">
+    <number>10</number>
+   </property>
+   <item>
+    <widget class="QLabel" name="label_18">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+	background:url(:/images/images/classGM/2.jpg)
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item alignment="Qt::AlignHCenter">
+    <widget class="QLabel" name="label">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>幼圆</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>你好，老师！请填写实验室工作日志，谢谢</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="w" native="true">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="Line" name="line_6">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="12" column="7">
+         <widget class="QLineEdit" name="leEtime">
+          <property name="font">
+           <font>
+            <family>幼圆</family>
+            <pointsize>11</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>2</string>
+          </property>
+         </widget>
+        </item>
+        <item row="14" column="1">
+         <widget class="QComboBox" name="cbxRequire">
+          <property name="minimumSize">
+           <size>
+            <width>115</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QComboBox{border:1px solid #d7d7d7; border-radius: 3px; padding: 1px 18px 1px 3px;} 
+QComboBox:editable{ background: white; }
+QComboBox:!editable{ background: #fbfbfb; color:black}
+QComboBox::drop-down{ subcontrol-origin: padding; subcontrol-position: top right; width: 22px; border-left-width: 1px; border-left-color: #c9c9c9; border-left-style: solid;  border-top-right-radius: 3px;border-bottom-right-radius: 3px; }
+QComboBox::down-arrow:on {
+top: 1px; left: 1px;
+image:url(:/images/images/TiTleBar/setting_white_down.png);
+}
+QComboBox::down-arrow { 
+image: url(:/images/images/TiTleBar/setting_white_normal.png);
+}
+QComboBox:hover{
+border:2px solid rgb(50, 180, 250);
+
+}
+</string>
+          </property>
+         </widget>
+        </item>
+        <item row="16" column="6">
+         <widget class="QPushButton" name="returnBtn">
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>返回</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QLineEdit" name="leTeacherName">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>24</height>
+           </size>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="16" column="0" colspan="3">
+         <widget class="QLabel" name="label_19">
+          <property name="text">
+           <string>注：日志可在课堂管理界面修改.</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1" colspan="2" alignment="Qt::AlignRight">
+         <widget class="QWidget" name="jieciW" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item alignment="Qt::AlignLeft">
+            <widget class="QComboBox" name="classTimeStartCbx">
+             <property name="styleSheet">
+              <string notr="true">QComboBox{border:1px solid #d7d7d7; border-radius: 3px; padding: 1px 18px 1px 3px;} 
+QComboBox:editable{ background: white; }
+QComboBox:!editable{ background: #fbfbfb; color:black}
+QComboBox::drop-down{ subcontrol-origin: padding; subcontrol-position: top right; width: 22px; border-left-width: 1px; border-left-color: #c9c9c9; border-left-style: solid;  border-top-right-radius: 3px;border-bottom-right-radius: 3px; }
+QComboBox::down-arrow:on {
+top: 1px; left: 1px;
+image:url(:/images/images/TiTleBar/setting_white_down.png);
+}
+QComboBox::down-arrow { 
+image: url(:/images/images/TiTleBar/setting_white_normal.png);
+}
+QComboBox:hover{
+border:2px solid rgb(50, 180, 250);
+
+}
+</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>第一节</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>第二节</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>第三节</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>第四节</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>第五节</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>第六节</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>第七节</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>第八节</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>第九节</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>第十节</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>第十一节</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_15">
+             <property name="text">
+              <string>-</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="classTimeEndCbx">
+             <property name="styleSheet">
+              <string notr="true">QComboBox{border:1px solid #d7d7d7; border-radius: 3px; padding: 1px 18px 1px 3px;} 
+QComboBox:editable{ background: white; }
+QComboBox:!editable{ background: #fbfbfb; color:black}
+QComboBox::drop-down{ subcontrol-origin: padding; subcontrol-position: top right; width: 22px; border-left-width: 1px; border-left-color: #c9c9c9; border-left-style: solid;  border-top-right-radius: 3px;border-bottom-right-radius: 3px; }
+QComboBox::down-arrow:on {
+top: 1px; left: 1px;
+image:url(:/images/images/TiTleBar/setting_white_down.png);
+}
+QComboBox::down-arrow { 
+image: url(:/images/images/TiTleBar/setting_white_normal.png);
+}
+QComboBox:hover{
+border:2px solid rgb(50, 180, 250);
+
+}
+</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>第一节</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>第二节</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>第三节</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>第四节</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>第五节</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>第六节</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>第七节</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>第八节</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>第九节</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>第十节</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>第十一节</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="12" column="6">
+         <widget class="QLabel" name="label_12">
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>幼圆</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>实验学时：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="14" column="0" alignment="Qt::AlignHCenter">
+         <widget class="QLabel" name="label_20">
+          <property name="font">
+           <font>
+            <family>幼圆</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>课程性质：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0" alignment="Qt::AlignHCenter">
+         <widget class="QLabel" name="label_9">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>幼圆</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>班级：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="0" alignment="Qt::AlignHCenter">
+         <widget class="QLabel" name="label_10">
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>幼圆</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>应到人数：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0" colspan="8">
+         <widget class="Line" name="line_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="14" column="5">
+         <widget class="QComboBox" name="cbxEcategory">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>24</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QComboBox{border:1px solid #d7d7d7; border-radius: 3px; padding: 1px 18px 1px 3px;} 
+QComboBox:editable{ background: white; }
+QComboBox:!editable{ background: #fbfbfb; color:black}
+QComboBox::drop-down{ subcontrol-origin: padding; subcontrol-position: top right; width: 22px; border-left-width: 1px; border-left-color: #c9c9c9; border-left-style: solid;  border-top-right-radius: 3px;border-bottom-right-radius: 3px; }
+QComboBox::down-arrow:on {
+top: 1px; left: 1px;
+image:url(:/images/images/TiTleBar/setting_white_down.png);
+}
+QComboBox::down-arrow { 
+image: url(:/images/images/TiTleBar/setting_white_normal.png);
+}
+QComboBox:hover{
+border:2px solid rgb(50, 180, 250);
+
+}
+</string>
+          </property>
+         </widget>
+        </item>
+        <item row="13" column="0" colspan="8">
+         <widget class="Line" name="line">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="1">
+         <widget class="QLineEdit" name="leCnum">
+          <property name="font">
+           <font>
+            <family>幼圆</family>
+            <pointsize>11</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="2">
+         <widget class="QLabel" name="label_11">
+          <property name="font">
+           <font>
+            <family>幼圆</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>实到人数：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="3">
+         <widget class="QLineEdit" name="leRepresentNum">
+          <property name="font">
+           <font>
+            <family>幼圆</family>
+            <pointsize>11</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="15" column="0" colspan="8">
+         <widget class="Line" name="line_5">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="lineWidth">
+           <number>1</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2" alignment="Qt::AlignHCenter">
+         <widget class="QLabel" name="label_3">
+          <property name="font">
+           <font>
+            <family>幼圆</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>周次：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="QLineEdit" name="leWeek">
+          <property name="font">
+           <font>
+            <family>幼圆</family>
+            <pointsize>11</pointsize>
+           </font>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="4" alignment="Qt::AlignHCenter">
+         <widget class="QLabel" name="label_4">
+          <property name="font">
+           <font>
+            <family>幼圆</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>星期：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="0" colspan="8">
+         <widget class="Line" name="line_3">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="5">
+         <widget class="QLineEdit" name="leXingqi">
+          <property name="font">
+           <font>
+            <family>幼圆</family>
+            <pointsize>11</pointsize>
+           </font>
+          </property>
+         </widget>
+        </item>
+        <item row="14" column="3">
+         <widget class="QComboBox" name="cbxEtype">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>24</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QComboBox{border:1px solid #d7d7d7; border-radius: 3px; padding: 1px 18px 1px 3px;} 
+QComboBox:editable{ background: white; }
+QComboBox:!editable{ background: #fbfbfb; color:black}
+QComboBox::drop-down{ subcontrol-origin: padding; subcontrol-position: top right; width: 22px; border-left-width: 1px; border-left-color: #c9c9c9; border-left-style: solid;  border-top-right-radius: 3px;border-bottom-right-radius: 3px; }
+QComboBox::down-arrow:on {
+top: 1px; left: 1px;
+image:url(:/images/images/TiTleBar/setting_white_down.png);
+}
+QComboBox::down-arrow { 
+image: url(:/images/images/TiTleBar/setting_white_normal.png);
+}
+QComboBox:hover{
+border:2px solid rgb(50, 180, 250);
+
+}
+</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="textDate">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>幼圆</family>
+            <pointsize>11</pointsize>
+           </font>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" colspan="8">
+         <widget class="Line" name="line_4">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="14" column="2">
+         <widget class="QLabel" name="label_13">
+          <property name="font">
+           <font>
+            <family>幼圆</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>实验类型：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+         <widget class="QLabel" name="label_2">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>幼圆</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>日期：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="14" column="4">
+         <widget class="QLabel" name="label_14">
+          <property name="font">
+           <font>
+            <family>幼圆</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>实验类别：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="4">
+         <widget class="QLabel" name="label_17">
+          <property name="font">
+           <font>
+            <family>幼圆</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>每组人数：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="5">
+         <widget class="QLineEdit" name="textGroupNum">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>24</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>1</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="0" alignment="Qt::AlignHCenter">
+         <widget class="QLabel" name="label_8">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>幼圆</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>专业：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="0" alignment="Qt::AlignHCenter">
+         <widget class="QLabel" name="label_7">
+          <property name="font">
+           <font>
+            <family>幼圆</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>课程名称：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="16" column="7">
+         <widget class="QPushButton" name="pushButton">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>提交</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+         <widget class="QLabel" name="label_5">
+          <property name="font">
+           <font>
+            <family>幼圆</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>节次：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="1" colspan="3">
+         <widget class="QLineEdit" name="leLessonName">
+          <property name="font">
+           <font>
+            <family>幼圆</family>
+            <pointsize>11</pointsize>
+           </font>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1" colspan="7">
+         <widget class="QWidget" name="classW" native="true">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>25</height>
+           </size>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QRadioButton" name="classRadio1">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="classRadio2">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="classRadio3">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="classRadio4">
+             <property name="text">
+              <string>其他</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="leClassName"/>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="7" column="0" colspan="8">
+         <widget class="Line" name="line_8">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="1" colspan="3">
+         <widget class="QLineEdit" name="leMajor">
+          <property name="font">
+           <font>
+            <family>幼圆</family>
+            <pointsize>11</pointsize>
+           </font>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0" colspan="8">
+         <widget class="Line" name="line_7">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="0" colspan="8">
+         <widget class="Line" name="line_9">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0" alignment="Qt::AlignHCenter">
+         <widget class="QLabel" name="label_6">
+          <property name="font">
+           <font>
+            <family>幼圆</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>指导老师：</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

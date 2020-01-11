@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>images/2.gif</file>
+        <file>images/gif.gif</file>
+        <file>images/icon.ico</file>
+        <file>images/back.png</file>
+        <file>images/action/copy.png</file>
+        <file>images/action/delete.png</file>
+        <file>images/action/export.png</file>
+        <file>images/action/import.png</file>
+        <file>images/action/refresh.png</file>
+        <file>images/error.ico</file>
+        <file>images/getFile.png</file>
+        <file>images/success.ico</file>
+        <file>images/uploadfile.ico</file>
+    </qresource>
+</RCC>

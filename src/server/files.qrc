@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/detail">
+        <file>files/课程信息模板.xlsx</file>
+        <file>files/学生信息模板.csv</file>
+        <file>files/学生信息模板.xlsx</file>
+    </qresource>
+</RCC>

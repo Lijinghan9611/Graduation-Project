@@ -1,0 +1,163 @@
+QWidget#MainWidget{background-color:white;}
+LabelStyle{background-color:#ECF2F7;border-left:1px solid gray;border-right:1px solid gray;}
+QLabel#whiteLabel{color:white;font:15px,幼圆;}
+Tool_Bar#ToolBar{background-color:#0E8EE7;border:1px solid grey;border-bottom:none;}
+MornitorView#MornitorView{background-color:white;}
+LabelView{background-color:transparent;color:white;border:none;}
+QPushButton#closeButton{background:url(:/images/images/TiTleBar/btn_close_normal.png),transparent;background-repeat:no-repeat;background-position:center;}
+QPushButton#closeButton:hover {background:url(:/images/images/TiTleBar/btn_close_highlight.png),transparent;background-repeat:no-repeat;background-position:center;}
+QPushButton#closeButton:pressed{background:url(:/images/images/TiTleBar/btn_close_down.png),transparent;background-repeat:no-repeat;background-position:center;}
+QPushButton#minimizeButton{background:url(:/images/images/TiTleBar/btn_mini_normal.png),transparent;background-repeat:no-repeat;background-position:center;}
+QPushButton#minimizeButton:hover {background:url(:/images/images/TiTleBar/btn_mini_highlight.png),transparent;background-repeat:no-repeat;background-position:center;}
+QPushButton#minimizeButton:pressed{background:url(:/images/images/TiTleBar/btn_mini_down.png),transparent;background-repeat:no-repeat;background-position:center;}
+QPushButton#setting{background:url(:/images/images/TiTleBar/setting_white_normal.png),transparent;background-repeat:no-repeat;background-position:center;}
+QPushButton#setting:hover {background:url(:/images/images/TiTleBar/setting_white_hover.png),transparent;background-repeat:no-repeat;background-position:center;}
+QPushButton#setting:pressed{background:url(:/images/images/TiTleBar/setting_white_down.png),transparent;background-repeat:no-repeat;background-position:center;}
+QPushButton::menu-indicator{image:None;}
+QScrollArea#ScrollArea{background-color:transparent;border-left: 1px solid gray;border-right: 1px solid gray;border-top:none;}
+QPushButton#labelclose{border-image:url(:/images/images/else/labelclose.ico)}
+QComboBox#combobox_class{font-size:15px;border: 1px solid gray;  border-radius: 3px; padding: 1px 2px 1px 2px; min-width: 9em;}
+QComboBox#combobox_class::drop-down {subcontrol-origin: padding;subcontrol-position: top right;width: 30px;border-top-right-radius: 3px;border-bottom-right-radius: 3px;}
+QComboBox#combobox_class QAbstractItemView::item{height:35px;}
+QComboBox#combobox_class:hover{border:2px solid rgb(50, 180, 250);}
+QComboBox#combobox_class::down-arrow {background:url(:/images/images/combo/down_arrow.ico);background-repeat:no-repeat;background-position:center;}
+QComboBox#combobox_class2{font-size:15px;border: 1px solid gray;  border-radius: 3px; padding: 1px 2px 1px 2px;}
+QComboBox#combobox_class2::drop-down {subcontrol-origin: padding;subcontrol-position: top right;width: 15px;border-left-width: 1px;border-left-color: darkgray;border-left-style: solid;border-top-right-radius: 3px;border-bottom-right-radius: 3px;}
+QComboBox#combobox_class2:hover{border:2px solid rgb(50, 180, 250);}
+QComboBox#combobox_class2::down-arrow {background:url(:/images/images/combo/arrow_drop_down.ico);background-repeat:no-repeat;background-position:center;}
+QComboBox#combobox_class2 QAbstractItemView{border: 1px solid darkgray;border-radius:2px;selection-background-color:#12CABD  ;outline:0px;}
+QLineEdit{border: 1px solid gray;  border-radius: 3px; padding: 1px 2px 1px 2px;}
+QLineEdit:hover{border:2px solid rgb(50, 180, 250);}
+CommonTitleBar{background-color:#0E8EE7;border: 1px solid gray;border-bottom:none;}
+CommonTitleBar#black{background-color:rgb(50,50,50);border: 1px solid gray;border-bottom:none;}
+CommonTitleBar QLabel{color:white;}
+MyMessageBox{border:1px solid grey;background-color:white;}
+QWidget#endwid{border:1px solid grey;border-top:none;background-color:#E3E3E3;}
+QPushButton#title_closeButton{background:url(:/images/images/MsgBox/close.png),transparent;background-repeat:no-repeat;background-position:center;}
+QPushButton#title_closeButton:hover{background:url(:/images/images/MsgBox/close_hover.png),transparent;background-repeat:no-repeat;background-position:center;}
+QPushButton#title_closeButton:pressed{background:url(:/images/images/MsgBox/close_pressed.png),transparent;background-repeat:no-repeat;background-position:center;}
+QPushButton#title_minButton{background:url(:/images/images/MsgBox/min.png),transparent;background-repeat:no-repeat;background-position:center;}
+QPushButton#title_minButton:hover{background:url(:/images/images/MsgBox/min_hover.png),transparent;background-repeat:no-repeat;background-position:center;}
+QPushButton#title_minButton:pressed{background:url(:/images/images/MsgBox/min_pressed.png),transparent;background-repeat:no-repeat;background-position:center;}
+QTextEdit#textedit{font-size:14px;font-family:幼圆;border:1px solid #D5DFE5;}
+QTabWidget{border-style:none;}
+QHeaderView::section{background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(46,46,46),stop:1 rgb(66,66,66));color: rgb(210,210,210);;padding-left: 4px;border: 1px solid #383838;}
+QTableView{background:white;selection-background-color:#12CABD;}
+QScrollBar{background:transparent;height:10px; width: 10px;}
+QScrollBar::handle{background:lightgray; border:2px solid transparent; border-radius:5px;}
+QScrollBar::handle:hover{background:gray;}
+QScrollBar::sub-line{background:transparent;}
+QScrollBar::add-line{background:transparent;}
+CLassManage QPushButton,AdminOption QPushButton{background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(46,46,46),stop:1 rgb(66,66,66));color:white;padding:4px;border-radius:6px;}
+CLassManage QPushButton:hover,AdminOption QPushButton:hover{background-color:rgb(80,80,80);}
+CLassManage QPushButton:pressed,AdminOption QPushButton:pressed{background-color:rgb(30,30,30)}
+CLassManage{background-color:white;border:1px solid grey;}
+CLassManage QPushButton#closeBtn{background-color:none;padding:0px;border-radius:0px;background:url(:/images/images/TiTleBar/btn_close_normal.png),transparent;background-repeat:no-repeat;background-position:center;}
+CLassManage QPushButton#closeBtn:hover {background:url(:/images/images/TiTleBar/btn_close_highlight.png),transparent;background-repeat:no-repeat;background-position:center;}
+CLassManage QPushButton#closeBtn:pressed{background:url(:/images/images/TiTleBar/btn_close_down.png),transparent;background-repeat:no-repeat;background-position:center;}
+CLassManage QPushButton#minBtn{background-color:none;padding:0px;border-radius:0px;background:url(:/images/images/TiTleBar/btn_mini_normal.png),transparent;background-repeat:no-repeat;background-position:center;}
+CLassManage QPushButton#minBtn:hover {background:url(:/images/images/TiTleBar/btn_mini_highlight.png),transparent;background-repeat:no-repeat;background-position:center;}
+CLassManage QPushButton#minBtn:pressed{background:url(:/images/images/TiTleBar/btn_mini_down.png),transparent;background-repeat:no-repeat;background-position:center;}
+QWidget#gw{border-image:url(:/images/images/classGM/2.jpg);border:1px solid grey;border-bottom:none;}
+MyMessageBox QPushButton{background-color:#0E8EE7;color:white;padding:4px;border-radius:6px;}
+MyMessageBox QPushButton:hover{background-color:#399FFB;}
+MyMessageBox QPushButton:pressed{background-color:#007DD5}
+CoolTitleBar{border-image:url(:/images/images/classGM/2.jpg);border:1px solid grey;border-bottom:none;}
+QPushButton#coolclose{border-radius:0px;background:url(:/images/images/MsgBox/close.png),transparent;background-repeat:no-repeat;background-position:center;}
+QPushButton#coolclose:hover{border-radius:0px;background:url(:/images/images/MsgBox/close_hover.png),transparent;background-repeat:no-repeat;background-position:center;}
+QPushButton#coolclose:pressed{border-radius:0px;background:url(:/images/images/MsgBox/close_pressed.png),transparent;background-repeat:no-repeat;background-position:center;}
+QPushButton#coolmin{border-radius:0px;background:url(:/images/images/MsgBox/min.png),transparent;background-repeat:no-repeat;background-position:center;}
+QPushButton#coolmin:hover{border-radius:0px;background:url(:/images/images/MsgBox/min_hover.png),transparent;background-repeat:no-repeat;background-position:center;}
+QPushButton#coolmin:pressed{border-radius:0px;background:url(:/images/images/MsgBox/min_pressed.png),transparent;background-repeat:no-repeat;background-position:center;}
+QTabBar::tab {background:white;border: 1px solid #C4C4C3;border-bottom-color: #C2C7CB;border-top-left-radius: 4px;border-top-right-radius:3px;width:50px;padding: 2px;}
+QTabBar::tab:selected {border-color: #9B9B9B;border-bottom-color: #C2C7CB;}
+QTabBar::tab:hover{background:#DCF1FF;}
+QTabBar::tab:!selected {margin-top:3px;}
+QRadioButton::indicator{width:17px;height:17px;}
+QRadioButton::indicator::unchecked{image:url(:/images/images/radio/radiobtn_normal.png)}
+QRadioButton::indicator:unchecked:hover{image:url(:/images/images/radio/radiobtn_highlight.png)}
+QRadioButton::indicator:unchecked:pressed{image:url(:/images/images/radio/radiobtn_pushed.png)}
+QRadioButton::indicator::checked{image:url(:/images/images/radio/radiobtn_tick_normal.png)}
+QRadioButton::indicator:checked:hover{image:url(:/images/images/radio/radiobtn_tick_highlight.png)}
+QRadioButton::indicator:checked:pressed{image:url(:/images/images/radio/radiobtn_tick_pushed.png)}
+LogIn{background-color:white;border:1px solid grey;}
+StartDialog{background-color:white;border:1px solid grey;}
+SignIn{background-color:white;border:1px solid grey;}
+QMenu{background-color:white; border:1px solid grey;}
+QMenu::item{background-color:transparent; padding:5px 20px; margin:0px 0px; border-bottom:1px solid #DBDBDB;}
+QMenu::item:selected{background-color:#2dabf9;color:white;}
+UiConfigDialog{background-color:white;border:1px solid grey;}
+NetConfigDialog{background-color:white;border:1px solid grey;}
+QPushButton#commonbutton{background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(245,245,245),stop:1 rgb(255,255,255));color:black;padding:4px;border-radius:6px;border:1px solid #DFDFDF;}
+QPushButton#commonbutton:hover{background-color: rgb(230,230,230)}
+QPushButton#commonbutton:pressed{background-color: rgb(240,240,240)}
+QPushButton#surebutton{background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 white,stop:0.5 #97B3C8);color:black;padding:4px;border-radius:6px;border:1px solid #2C5B75;}
+QPushButton#surebutton:hover{background-color:#CBDDE7;color:black}
+QPushButton#surebutton:pressed{background-color:#326278;color:white}
+QPushButton#deleteBtn{background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(46,46,46),stop:1 rgb(66,66,66));color:white;padding:4px;border-radius:6px;}
+QPushButton#deleteBtn:hover{background-color:rgb(80,80,80);}
+QPushButton#deleteBtn:pressed{background-color:rgb(30,30,30)}
+SendMg{background-color:white;border:1px solid grey;}
+QPushButton#mybutton{background-color:transparent;border:none;}
+QPushButton#mybutton:hover{background-color:#3DA5FC}
+QPushButton#mybutton:pressed{background-color:#3D9DEE}
+QLabel#mybuttontext{color:white;font-size:13px;}
+QStatusBar#statusbar{background-color:#F0F0F0;border:1px solid grey;border-top:none;}
+CmdWidget{border:1px solid grey;background-color:rgb(232,232,247)}
+ClientAtribute{background-color:white;border:1px solid grey;}
+AdminOption{background-color:white;border:1px solid grey;}
+QDateEdit{border:1px solid grey;background-color:transparent}
+QDateEdit::down-arrow {background:url(:/images/images/combo/arrow_drop_down.ico),transparent;background-repeat:no-repeat;background-position:center;}
+QDateEdit::drop-down{subcontrol-origin: padding;subcontrol-position: top right;width: 15px;border:none}
+QTextEdit#textedit2{font-size:14px;font-family:幼圆;border-right:1px solid grey;border-bottom:1px solid grey;border-left:none;border-top:none;}
+TranportFileWidget{background-color:white;border:1px solid grey;}
+TranportFileWidget QPushButton#closeBtn{background-color:none;padding:0px;border-radius:0px;background:url(:/images/images/TiTleBar/btn_close_normal.png),transparent;background-repeat:no-repeat;background-position:center;}
+TranportFileWidget QPushButton#closeBtn:hover {background:url(:/images/images/TiTleBar/btn_close_highlight.png),transparent;background-repeat:no-repeat;background-position:center;}
+TranportFileWidget QPushButton#closeBtn:pressed{background:url(:/images/images/TiTleBar/btn_close_down.png),transparent;background-repeat:no-repeat;background-position:center;}
+TranportFileWidget QPushButton#minBtn{background-color:none;padding:0px;border-radius:0px;background:url(:/images/images/TiTleBar/btn_mini_normal.png),transparent;background-repeat:no-repeat;background-position:center;}
+TranportFileWidget QPushButton#minBtn:hover {background:url(:/images/images/TiTleBar/btn_mini_highlight.png),transparent;background-repeat:no-repeat;background-position:center;}
+TranportFileWidget QPushButton#minBtn:pressed{background:url(:/images/images/TiTleBar/btn_mini_down.png),transparent;background-repeat:no-repeat;background-position:center;}
+QWidget#TranTitle{border-image:url(:/images/images/classGM/2.jpg);border:1px solid grey;border-bottom:none;}
+ComparePortrait{background-color:white;border:1px solid grey;}
+QTableView::item:hover
+{
+    show-decoration-selected:5;
+    background:skyblue;
+}
+QTableWidget::item:hover
+{
+    show-decoration-selected:5;
+    background:skyblue;
+}
+/*Qmenu Style Sheets*/
+ QMenu {
+     background-color: white; /* sets background of the menu 设置整个菜单区域的背景色，我用的是白色：white*/
+     border: 1px solid white;/*整个菜单区域的边框粗细、样式、颜色*/
+ }
+  
+ QMenu::item {
+     /* sets background of menu item. set this to something non-transparent
+         if you want menu color and menu item color to be different */
+     background-color: transparent;
+     padding:8px 32px;/*设置菜单项文字上下和左右的内边距，效果就是菜单中的条目左右上下有了间隔*/
+     border-bottom:none;/*为菜单项之间添加横线间隔*/
+ }
+  
+ QMenu::item:selected { /* when user selects item using mouse or keyboard */
+     background-color: #2dabf9;/*这一句是设置菜单项鼠标经过选中的样式*/
+ }
+QPushButton#settingTitle{background:url(:/images/images/TiTleBar/setting_white_normal_Title.png),transparent;background-repeat:no-repeat;background-position:center;}
+QPushButton#settingTitle:hover {background:url(:/images/images/TiTleBar/setting_white_hover_Title.png),transparent;background-repeat:no-repeat;background-position:center;}
+QPushButton#settingTitle:pressed{background:url(:/images/images/TiTleBar/setting_white_down_Title.png),transparent;background-repeat:no-repeat;background-position:center;}
+
+QPushButton#settingLogin{background:url(:/images/images/else/setting_white_normal.png),transparent;background-repeat:no-repeat;background-position:center;}
+QPushButton#settingLogin:hover {background:url(:/images/images/else/login_set_hover.png),transparent;background-repeat:no-repeat;background-position:center;}
+QPushButton#settingLogin:pressed{background:url(:/images/images/else/setting_white_down.png),transparent;background-repeat:no-repeat;background-position:center;}
+
+
+
+
+
+
+
+
